@@ -1,14 +1,11 @@
-class UserModel {
-  final String uid;
-  final String email;
-  final String nickname;
-  final String sportPreference;
+import '../../domain/entities/user_entity.dart';
 
-  UserModel({
-    required this.uid,
-    required this.email,
-    required this.nickname,
-    required this.sportPreference,
+class UserModel extends UserEntity {
+  const UserModel({
+    required super.uid,
+    required super.email,
+    required super.nickname,
+    required super.sportPreference,
   });
 
   Map<String, dynamic> toMap() {
